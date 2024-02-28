@@ -34,8 +34,8 @@
 - Добавлен маршрутизатор inetRouter2 по схеме:  
 	> inetRouter2 --> 192.168.0.32/28 --> centralRouter --> 192.168.0.0/28 --> centralServer
 
-- На inetRouter2 в iptables добавляем следующие првила:  
-	> iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 192.168.0.2
+- На inetRouter2 в iptables добавляем следующие правила:  
+	> iptables -t nat -A PREROUTING -p tcp --dport 8080 -j DNAT --to-destination 192.168.0.2  
 	> iptables -t nat -A POSTROUTING -p tcp --dport 8080 -j SNAT --to-source 192.168.0.34
 
 - На centralServer поднят nginx на порту 80. В iptables добавляем редирект:
