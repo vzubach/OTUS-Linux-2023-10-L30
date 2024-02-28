@@ -29,7 +29,7 @@
 		ECDSA key fingerprint is SHA256:uY6GIjFdI9qTC4QYb980QRk+WblJF9cd5glr3SmmL+w.
 		Are you sure you want to continue connecting (yes/no)? 
 
-**Проброс порта**
+**Проброс порта** (выполнено со звёздочкой, без маскарадинга!)
 
 - Добавлен маршрутизатор inetRouter2 по схеме:  
 	> inetRouter2 --> 192.168.0.32/28 --> centralRouter --> 192.168.0.0/28 --> centralServer
